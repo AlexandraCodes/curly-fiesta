@@ -12,18 +12,6 @@
 
 #include "ft_printf.h"
 
-int	is_lower(int c)
-{
-	if (c >= 141 && c <= 172)
-		return (c);
-	return (0);
-}
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
 int	is_less_than_zero(int i)
 {
 	if (i < 0)

@@ -12,39 +12,6 @@
 
 #include "ft_printf.h"
 
-char	*ft_strnew(int size)
-{
-	char	*str;
-
-	str = (char *)malloc(sizeof(char) * size + 1);
-	if (!str)
-		return (NULL);
-	while (size >= 0)
-		str[size--] = '\0';
-	return (str);
-}
-
-int	ft_strlen(char *str)
-{
-	int		i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
-void	ft_printstr(char *str)
-{
-	int		i;
-	i = 0;
-	while (str[i] != '\0')
-	{
-		write(1, &(str[i]), 1);
-		i++;
-	}
-}
-
 char	*ft_puthexa_long(unsigned long long int num, char *str)
 {
 	unsigned long long int	new_num;

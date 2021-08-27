@@ -6,7 +6,7 @@ CFLAGS = -Wall -Werror -Wextra
 
 INC_PATH = printf.h
 
-SRC_NAME = ft_printf.c is_flag.c is_hex.c is_put.c
+SRC_NAME = ft_printf.c is_flag.c is_hex.c is_put.c is_lib.c
 
 OBJ_NAME = $(SRC_NAME:.c=.o)
 
