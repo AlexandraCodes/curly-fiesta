@@ -6,7 +6,7 @@
 /*   By: alecasti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/24 20:45:48 by alecasti          #+#    #+#             */
-/*   Updated: 2021/08/27 15:59:32 by alecasti         ###   ########.fr       */
+/*   Updated: 2021/08/27 23:35:29 by alecasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,13 @@ int	len_of_int(unsigned int num)
 
 char	*ft_putnbr(int num)
 {
-	unsigned int		new_num;
-	int		i;
-	char	*str;
+	unsigned int	new_num;
+	int				i;
+	char			*str;
 
 	new_num = is_less_than_zero(num);
 	i = len_of_int(new_num);
-	str = ft_strnew(i);	
+	str = ft_strnew(i);
 	new_num = is_less_than_zero(num);
 	while (--i >= 0)
 	{

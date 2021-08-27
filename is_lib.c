@@ -6,7 +6,7 @@
 /*   By: alecasti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/24 20:45:39 by alecasti          #+#    #+#             */
-/*   Updated: 2021/08/27 14:44:25 by alecasti         ###   ########.fr       */
+/*   Updated: 2021/08/27 23:33:41 by alecasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ int	ft_strlen(char *str)
 void	ft_printstr(char *str)
 {
 	int		i;
+
 	i = 0;
 	while (str[i] != '\0')
 	{
