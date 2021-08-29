@@ -3,7 +3,43 @@
 
 >'cspdiuxX%' flag printf recoded
 
-## Flag characters
+## SYNOPSIS
+```c
+#include <stdio.h>
+
+int ft_printf(const char *format, ...);
+```
+
+## DESCRIPTION
+The function printf(), from the **printf()** family, produces output to _stdout_ according to a _format_ as described below.
+
+### Format of the format string
+```
+%[$][flags][width][.precision][length modifier]conversion
+```
+
+## Flags
+
+|                               r                       |            applies to             |     bonus     |
+| flag | Description                                    | c | s | d | i | u | x | X | p | % | n | f | e | g |
+| :--: | ---------------------------------------------: | --------------------------------- | ------------- |
+| `#`  | "0x" or "0X" prepended                         |   |   |   |   |   | x | x |   |   |   |   |   |   |
+|      | always decimal point, even if no digit follows |   |   |   |   |   |   |   |   |   |   | x | x | x |
+| `0`  |  |   |   |   |   |   | x | x |   |   |   |   |   |   |
+| `-`  |  |   |   |   |   |   | x | x |   |   |   |   |   |   |
+| ` `  |  |   |   |   |   |   | x | x |   |   |   |   |   |   |
+| `+`  |  |   |   |   |   |   | x | x |   |   |   |   |   |   |
+
+## Width
+
+
+
+## Precision
+
+## Length Modifier
+
+## Conversions
+### Flag characters
 The character % is followed by zero or more of the following
        flags:
 
@@ -47,4 +83,5 @@ The character % is followed by zero or more of the following
 - [ ] Bonus #2 - '# +' pound, space, plus
 
 - [ ] Add flag details
+- [ ] ft_printf --> ft_pf
 - [ ] 
